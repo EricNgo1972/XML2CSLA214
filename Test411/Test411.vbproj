@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{94B7C804-D6D2-4BE7-B81B-9D25142B9234}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <StartupObject>Test411.Module1</StartupObject>
+    <RootNamespace>Test411</RootNamespace>
+    <AssemblyName>Test411</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Console</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Test411.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Test411.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Csla, Version=2.1.4.1, Culture=neutral, PublicKeyToken=93be5fdc093e4c30, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Phoebus\Lib\Csla.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.CloudAuthentication">
+      <HintPath>..\..\Phoebus\Lib\SPC.CloudAuthentication.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.CORE.Crypto">
+      <HintPath>..\..\Phoebus\Lib\SPC.CORE.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.EXT.FAST">
+      <HintPath>..\..\Phoebus\Lib\SPC.EXT.FAST.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.EXT.Maximo">
+      <HintPath>..\..\Phoebus\Lib\SPC.EXT.Maximo.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.EXT.MIMOSA">
+      <HintPath>..\..\Phoebus\Lib\SPC.EXT.MIMOSA.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.EXT.MISA">
+      <HintPath>..\..\Phoebus\Lib\SPC.EXT.MISA.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.Helper, Version=4.5.5.386, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Phoebus\Lib\SPC.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.Phoebus.Azure">
+      <HintPath>..\..\Phoebus\Lib\SPC.Phoebus.Azure.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.Phoebus.ClientDocuments">
+      <HintPath>..\..\Phoebus\Lib\SPC.Phoebus.ClientDocuments.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.Phoebus.CRM">
+      <HintPath>..\..\Phoebus\Lib\SPC.Phoebus.CRM.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.Phoebus.DocumentManagement">
+      <HintPath>..\..\Phoebus\Lib\SPC.Phoebus.DocumentManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.Phoebus.EAM">
+      <HintPath>..\..\Phoebus\Lib\SPC.Phoebus.EAM.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.Phoebus.FI">
+      <HintPath>..\..\Phoebus\Lib\SPC.Phoebus.FI.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.Phoebus.HR">
+      <HintPath>..\..\Phoebus\Lib\SPC.Phoebus.HR.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.Phoebus.HSP">
+      <HintPath>..\..\Phoebus\Lib\SPC.Phoebus.HSP.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.Phoebus.LA">
+      <HintPath>..\..\Phoebus\Lib\SPC.Phoebus.LA.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.Phoebus.LM">
+      <HintPath>..\..\Phoebus\Lib\SPC.Phoebus.LM.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.Phoebus.Localizator, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Phoebus\Lib\SPC.Phoebus.Localizator.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.Phoebus.MC">
+      <HintPath>..\..\Phoebus\Lib\SPC.Phoebus.MC.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.Phoebus.OG">
+      <HintPath>..\..\Phoebus\Lib\SPC.Phoebus.OG.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.Phoebus.PAF, Version=4.5.5.386, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Phoebus\Lib\SPC.Phoebus.PAF.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.Phoebus.PBO">
+      <HintPath>..\..\Phoebus\Lib\SPC.Phoebus.PBO.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.Phoebus.PI">
+      <HintPath>..\..\Phoebus\Lib\SPC.Phoebus.PI.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.Phoebus.PM">
+      <HintPath>..\..\Phoebus\Lib\SPC.Phoebus.PM.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.Phoebus.POP">
+      <HintPath>..\..\Phoebus\Lib\SPC.Phoebus.POP.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.Phoebus.QDBO, Version=3.5.5.380, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Phoebus\Lib\SPC.Phoebus.QDBO.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.Phoebus.RE">
+      <HintPath>..\..\Phoebus\Lib\SPC.Phoebus.RE.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.Phoebus.SM">
+      <HintPath>..\..\Phoebus\Lib\SPC.Phoebus.SM.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.Phoebus.SOP">
+      <HintPath>..\..\Phoebus\Lib\SPC.Phoebus.SOP.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.Phoebus.TBO">
+      <HintPath>..\..\Phoebus\Lib\SPC.Phoebus.TBO.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.Phoebus.UsrMan, Version=4.5.5.386, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Phoebus\Lib\SPC.Phoebus.UsrMan.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.Phoebus.VNPTInvoice">
+      <HintPath>..\..\Phoebus\Lib\SPC.Phoebus.VNPTInvoice.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.Phoebus.VNPTInvoice.XmlSerializers">
+      <HintPath>..\..\Phoebus\Lib\SPC.Phoebus.VNPTInvoice.XmlSerializers.dll</HintPath>
+    </Reference>
+    <Reference Include="SPC.Phoebus.VUSREV">
+      <HintPath>..\..\Phoebus\Lib\SPC.Phoebus.VUSREV.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SPC.CodeGen\SPC.CodeGen.vbproj">
+      <Project>{56a90cee-fbab-4e89-994e-2e8dfd8290f5}</Project>
+      <Name>SPC.CodeGen</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
